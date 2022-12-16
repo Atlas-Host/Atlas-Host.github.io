@@ -4,7 +4,7 @@ local TweenService, Core do
 	TweenService = game:GetService("TweenService"); Core = game:GetService("CoreGui");
 end
 
-local protectGui = (syn and syn["protect_gui"]) or (gethui)
+local protectGui = (gethui) or (syn and syn["protect_gui"])
 
 local New = function(Class, Properties)
 	local Obj, Properties = Instance.new(Class), Properties or {}
@@ -48,7 +48,7 @@ Nord["Themes"] = {
     },
     ["dark"] = {
         ["Frame"] = {
-            ["BackgroundColor3"] = Color3.fromRGB(40, 40, 43);
+            ["BackgroundColor3"] = Color3.fromRGB(70, 70, 73);
         },
         ["TextLabel"] = {
             ["TextColor3"] = Color3.new(1, 1, 1)
@@ -59,7 +59,7 @@ Nord["Themes"] = {
             ["BackgroundColor3"] = Color3.fromRGB(44, 47, 51);
         },
         ["TextLabel"] = {
-            ["TextColor3"] = Color3.fromRGB(114, 137, 218)
+            ["TextColor3"] = Color3.fromRGB(250, 250, 250)
         }
     },
     ["spotify"] = {
@@ -115,7 +115,7 @@ function Nord:Notify(Title, Message, Type, Duration)
 	local Hover = New("TextButton", {Parent = Frame, BackgroundTransparency = 1, Text = "", Size = UDim2.new(1, 0, 1, 0), Position = UDim2.new(0.5, 0, 0.5, 0), ZIndex = 3});
     Nord:ApplyTheme((Nord["Config"]["Theme"]), Frame)
     if Nord["Config"]["Theme"]:lower() == "light" and Type:lower() == "normal" then 
-        Line["BackgroundColor3"] = Color3.new(40, 40, 40);
+        Line["BackgroundColor3"] = Color3.new(0, 0, 0);
         DropShadow["ImageColor3"] = Color3.new(0, 0, 0)
     end
 
