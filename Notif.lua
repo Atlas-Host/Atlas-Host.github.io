@@ -115,7 +115,7 @@ function Nord:Notify(Title, Message, Type, Duration)
 	local Hover = New("TextButton", {Parent = Frame, BackgroundTransparency = 1, Text = "", Size = UDim2.new(1, 0, 1, 0), Position = UDim2.new(0.5, 0, 0.5, 0), ZIndex = 3});
     Nord:ApplyTheme((Nord["Config"]["Theme"]), Frame)
     if Nord["Config"]["Theme"]:lower() == "light" and Type:lower() == "normal" then 
-        Line["BackgroundColor3"] = Color3.new(0, 0, 0);
+        Line["BackgroundColor3"] = Color3.new(40, 40, 40);
         DropShadow["ImageColor3"] = Color3.new(0, 0, 0)
     end
 
