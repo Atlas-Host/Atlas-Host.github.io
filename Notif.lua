@@ -38,37 +38,14 @@ local Nord = {};
 Nord["Config"] = { ["Theme"] = "Dark" }
 
 Nord["Themes"] = {
-    ["light"] = {
-        ["Frame"] = {
-            ["BackgroundColor3"] = Color3.new(1, 1, 1);
-        },
-        ["TextLabel"] = {
-            ["TextColor3"] = Color3.new(0, 0, 0)
-        }
-    },
-    ["dark"] = {
-        ["Frame"] = {
-            ["BackgroundColor3"] = Color3.fromRGB(70, 70, 73);
-        },
-        ["TextLabel"] = {
-            ["TextColor3"] = Color3.new(1, 1, 1)
-        }
-    },
     ["discord"] = {
         ["Frame"] = {
-            ["BackgroundColor3"] = Color3.fromRGB(44, 47, 51);
+            ["BackgroundColor3"] = Color3.fromRGB(50, 50, 50);
         },
         ["TextLabel"] = {
             ["TextColor3"] = Color3.fromRGB(250, 250, 250)
         }
     },
-    ["spotify"] = {
-        ["Frame"] = {
-            ["BackgroundColor3"] = Color3.fromRGB(25, 20, 20);
-        },
-        ["TextLabel"] = {
-            ["TextColor3"] = Color3.fromRGB(30, 215, 96)
-        }
     }
 }
 
